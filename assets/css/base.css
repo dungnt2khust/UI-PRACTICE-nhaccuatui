@@ -1,0 +1,22 @@
+* {
+    box-sizing: inherit;
+}
+/* Reset CSS */
+html {
+    /* Almost 16px */
+    /* HACK => 1rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-primary: #ccc;
+    --text-color: #333;
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color-light: rgb(206, 200, 200);
+    --primary-color: #2daaed;
+    --height-header: 58px;
+}
