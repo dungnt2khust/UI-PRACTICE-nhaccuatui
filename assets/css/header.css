@@ -256,7 +256,6 @@
 }
 .login-list__item-link {
     display: block;
-    padding: 10px;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.5rem;
@@ -264,6 +263,12 @@
 }
 .login-list__item-link:hover {
     background-color: rgba(0, 0, 0, 0.05);
+}
+.login-list__item-label {
+    display: block;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /* Sublist */

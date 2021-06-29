@@ -19,4 +19,98 @@ html {
     --text-color-light: rgb(206, 200, 200);
     --primary-color: #2daaed;
     --height-header: 58px;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --label-form-width: 106px;
+    --label-form-margin-left: 20px;
+    --form-login-width: 800px;
+    --form-field-width: 400px;
+    --text-red: red;
+    --btn-red-color: #e74c3c
+}
+.text-red {
+    color: var(--text-red);
+}
+.center-flex {
+    justify-self: center;
+    align-self: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+
+/* Form */
+.form-field-wrap {
+    margin-top: 20px;
+    width: 400px;
+}
+.form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-label {
+    align-self: flex-end;
+    font-size: 1.4rem;
+    display: flex;
+    width: 106px;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    color: var(--text-color);
+}
+.form-input {
+    flex: 1;
+    height: 25px;
+    border: 1px solid var(--border-primary);
+    border-radius: 2px;
+}
+.form-input__checkbox {
+    border: 1px solid var(--primary-color);
+}
+.form-field__checkbox {
+    display: flex;
+    align-items: baseline;
+    margin-left: calc(var(--label-form-margin-left) + var(--label-form-width));
+}
+.form-label__checkbox {
+    font-size: 1.4rem;
+    padding-left: 4px;
+}
+.form-field__forgot-password {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.form-field__checkbox-wrap {
+    display: flex;
+}
+
+
+/* Button */
+.btn {
+     min-width: 142px;
+    height: 34px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+}
+.btn.btn-red {
+    color: var(--while-color);
+    background-color: var(--btn-red-color);
+}
+
+.btn.btn-blue {
+    color: var(--while-color);
+    background-color: var(--primary-color);
+}
+.btn:hover {
+    opacity: 0.8;
 }

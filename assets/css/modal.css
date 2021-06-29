@@ -1,0 +1,133 @@
+.modal {
+    display: none;
+    justify-content: center;
+}
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__body {
+    position: fixed;
+    top: 100px;
+}
+
+/* Modal login */
+.input-login-form:checked ~ .modal {
+    display: flex;    
+}
+.modal__login {
+    height: 282px;
+    width: 800px;
+    background-color: var(--while-color);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--box-shadow-color);
+    display: flex;
+    flex-direction: column;
+}
+.modal__login-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-primary);
+}
+.modal__login-title {
+    font-size: 1.8rem;
+    margin: 14px 16px;
+    font-weight: 600;
+}
+.modal__login-head-cancel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.modal__login-head-cancel-icon {
+    font-size: 1.8rem;
+    padding: 14px 14px 18px 14px;
+}
+.modal__login-body {
+    flex: 1;
+    display: flex;
+}
+.modal__login-form {
+    flex: 5;
+    border-right: 1px solid var(--border-primary);
+    display: flex;
+    flex-direction: column;
+}
+.modal__login-social {
+    flex: 2;
+    text-align: center; 
+}
+.modal__login-social-register-text {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.modal__login-form-guide {
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.modal__login-form-btn {
+    margin-top: 10px;
+    width: calc(var(--form-field-width) - (var(--label-form-width) + var(--label-form-margin-left)));
+    margin-left: calc(var(--label-form-margin-left) + var(--label-form-width));
+}
+.modal__login-social-or {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: var(--text-color)
+}
+.social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 20px;
+}
+.social-item {
+    
+}
+.social-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--black-color);
+    display: flex;
+    align-items: center;
+}
+.social-item__link:hover {
+    color: var(--primary-color);
+}
+.social-item__icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+.social-item__icon {
+    display: block;
+    color: var(--while-color);
+    font-size: 1.4rem;
+}
+.background-red {
+    background-color: var(--btn-red-color);
+}
+.background-blue {
+    background-color: var(--primary-color);
+}
+
+
+
+/* Modal registration */
+.modal__registration {
+
+}

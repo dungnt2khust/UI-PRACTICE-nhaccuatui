@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/container.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
     <link rel="stylesheet" href="../assets/css/main-content.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <!-- Reset CSS -->
@@ -373,11 +374,11 @@
                                     </div>
                                 </a>
                                 <ul class="login-list">
-                                    <li class="login-list__item"><a href="#" class="login-list__item-link">Đăng nhập</a></li>
-                                    <li class="login-list__item"><a href="#" class="login-list__item-link"> Đăng kí</a></li>
+                                    <li class="login-list__item"><a href="#" class="login-list__item-link"><label for="login-form" class="login-list__item-label">Đăng nhập</label></a></li>
+                                    <li class="login-list__item"><a href="#" class="login-list__item-link"><label for="register-form" class="login-list__item-label">Đăng kí</label></a></li>
                                 </ul>
                             </div>
-                    </div>
+                        </div>
                     <!-- End header controls -->
                     </header>
                     <!-- End header -->
@@ -390,12 +391,12 @@
         <div class="container">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-8">
+                    <div class="col l-9">
                         <!-- Main content -->
                         <div class="main-content">
                         </div>
                     </div>
-                    <div class="col l-4">
+                    <div class="col l-3">
                         <!-- Sidebar -->
                         <div class="sidebar">
                         </div>
@@ -404,6 +405,83 @@
             </div>
         </div>
         <!-- End container -->
+        <!-- Footer -->
+        <footer class="footer">
+
+        </footer>
+        <!-- End footer -->
+    </div>
+    <!-- Modal -->
+    <input type="checkbox" id="login-form" class="input-login-form">
+    <div class="modal">
+        <label for="login-form" class="modal__overlay"></label>
+        <div class="modal__body">
+            <!-- Modal login -->
+            <div class="modal__login">
+                <div class="modal__login-head">
+                    <h3 class="modal__login-title"> ĐĂNG NHẬP</h3>
+                    <label for="login-form" class="modal__login-head-cancel">
+                        <i class="modal__login-head-cancel-icon fas fa-times"></i>
+                    </label>
+                </div>
+                <div class="modal__login-body">
+                    <div class="modal__login-form">
+                        <span class="modal__login-form-guide"> Những thông tin có đánh dấu (<span class="text-red">*</span>) là bắt buộc nhập</span>
+                        <div class="form-field-wrap center-flex">
+                            <div class="form-field">
+                                <label for="form-login-name" class="form-label"> 
+                                    <span class="form-label__text"> Tên đăng nhập <span class="text-red">*</span> </span>
+                                </label>
+                                <input type="text" id="form-login-name" class="form-input">
+                            </div>
+                            <div class="form-field">
+                                <label for="form-login-password" class="form-label">
+                                    <span class="form-label__text"> Mật khẩu <span class="text-red">*</span></span>
+                                </label>
+                                <input type="text" id="form-login-password" class="form-input">
+                            </div>
+                            <div class="form-field__checkbox-wrap space-between">
+                                <div class="form-field__checkbox">
+                                    <input type="checkbox" id="remember-password" class="form-input__checkbox">
+                                    <label for="remember-password" class="form-label__checkbox">Nhớ mật khẩu</label>
+                                </div>
+                                <span class="form-field__forgot-password"> Quên mật khẩu?</span>
+                            </div>
+                            <div class="modal__login-form-btn btn btn-blue"> ĐĂNG NHẬP</div>
+                        </div>
+                    </div>
+                    <div class="modal__login-social">
+                        <span class="modal__login-social-register-text"> Bạn chưa có tài khoản NCT ID?</span>
+                        <div class="modal__login-social-register-btn btn btn-red"> ĐĂNG KÍ NGAY</div>
+                        <div class="modal__login-social-or"> ________ HOẶC ________</div>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="https://facebook.com" class="social-item__link">
+                                    <div class="social-item__icon-wrap background-blue">
+                                        <i class="social-item__icon fab fa-facebook-f"></i>
+                                    </div>
+                                    <span class="social-item__name"> Đăng nhập bằng Facebook</span>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://google.com" class="social-item__link">
+                                    <div class="social-item__icon-wrap background-red">
+                                        <i class="social-item__icon fab fa-google-plus-g"></i>
+                                    </div>
+                                    <span class="social-item__name"> Đăng nhập bằng Google +</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End modal login -->
+            <!-- Modal registration -->
+            <div class="modal__registration">
+
+            </div>
+            <!-- End modal registration -->
+        </div>
     </div>
 </body>
 </html>
