@@ -16,16 +16,29 @@
 }
 
 /* Modal login */
+.login-state,
+.register-state {
+    display: none;
+}
 .input-login-form:checked ~ .modal {
     display: flex;    
 }
+.input-login-form:checked ~ .modal .login-state {
+    display: flex;
+}
+.input-register-form:checked ~ .modal {
+    display: flex;
+}
+.input-register-form:checked ~ .modal .register-state {
+    display: flex;
+}
+.modal__registration,
 .modal__login {
-    height: 282px;
     width: 800px;
     background-color: var(--while-color);
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--box-shadow-color);
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .modal__login-head {
@@ -59,7 +72,10 @@
 }
 .modal__login-social {
     flex: 2;
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .modal__login-social-register-text {
     display: block;
@@ -75,6 +91,7 @@
 }
 .modal__login-form-btn {
     margin-top: 10px;
+    margin-bottom: 30px;
     width: calc(var(--form-field-width) - (var(--label-form-width) + var(--label-form-margin-left)));
     margin-left: calc(var(--label-form-margin-left) + var(--label-form-width));
 }
