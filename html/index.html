@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/valiables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/grid.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,54 +26,362 @@
     <div class="app">
         <div class="grid wide">
             <div class="row">
-                <header class="header">
-                    <div class="header__logo">
-                        <img class="header__logo-img" src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png" alt="Logo NhacCuatui">
-                    </div>
-                    <div class="header__hash-tag">
-                        <img src="https://stc-id.nixcdn.com/v11/images/ic_new.png" alt="Hash tag NhacCuaTui" class="header__hash-tag-img">
-                    </div>
-                    <nav class="header__navbar">
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> Bài hát</a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> Playlist</a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> Tuyển tập</a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> Video</a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> BXH</a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> Chủ Đề </a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"> Top 100</a></li>
-                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"><i class="header__navbar-item-menu-icon fas fa-ellipsis-h"></i></a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__upgrade-vip">
-                        <span class="header__upgrade-vip-text">NÂNG CẤP VIP</span>
-                    </div>
-                    <div class="header__controls">
-                        <ul class="header__controls-list">
-                            <li class="header__controls-item">
-                                <a href="#" class="header__controls-item-link"><img class="header__controls-item-icon" src="https://stc-id.nixcdn.com/v11/images/header_new/ic_search_icon.png" alt="Search"></a>
-                            </li>
-                            <li class="header__controls-item">
-                                <a href="#" class="header__controls-item-link"><img class="header__controls-item-icon"src="https://stc-id.nixcdn.com/v11/images/header_new/ic_head.png" alt="Headphone"></a>
-                            </li>
-                            <li class="header__controls-item">
-                                <a href="#" class="header__controls-item-link"><img class="header__controls-item-icon"src="https://stc-id.nixcdn.com/v11/images/header_new/ic_cloud.png" alt="Cloud"></a>
-                            </li>
-                            <li class="header__controls-item">
-                                <a href="#" class="header__controls-item-link"><img class="header__controls-item-img"src="https://stc-id.nixcdn.com/v11/images/header_new/ic_decor_ncoin.png" alt="Headphone vip"></a>
-                            </li>
-                        </ul>
-                        <div class="header__controls-login">
-                            <img class="header__controls-login-img" src="https://stc-id.nixcdn.com/v11/images/nologin_user.png" alt="Login image">
-                            <div class="header__controls-login-body">
-                               <span class="header__controls-login-text">Đăng nhập</span>  
-                               <i class="header__controls-login-icon fas fa-sort-down"></i></span>
+                <div class="col l-12 m-12 c-12">
+                    <!-- Header -->
+                    <header class="header">
+                        <div class="header__logo">
+                            <a href="" class="header__logo-link"><img class="header__logo-img" src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png" alt="Logo NhacCuatui"></a>
                         </div>
-                   </div>
-                </header>
+                        <div class="header__hash-tag">
+                            <a href="#" class="header__hash-tag-link"><img src="https://stc-id.nixcdn.com/v11/images/ic_new.png" alt="Hash tag NhacCuaTui" class="header__hash-tag-img"></a>
+                        </div>
+                        <!-- Header navbar -->
+                        <nav class="header__navbar">
+                            <ul class="header__navbar-list">
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        Bài hát
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> VIỆT NAM</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc trẻ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Trữ tình</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Remix Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Rap Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Tiền chiến</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc Trịnh</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Rock Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Cách mạng</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> ÂU MỸ</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Pop</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Rock</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Electronica/Dance</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> R&B/HipHop/Rap</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Blues/Jazz</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Country</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Latin</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Indie</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Âu Mỹ khác</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> CHÂU Á</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hàn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hoa</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Nhật</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Thái</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> KHÁC</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thiếu nhi</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Không lời</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Beat</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thể loại khác</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tui hát</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        Playlist
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> VIỆT NAM</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc trẻ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Trữ tình</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Remix Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Rap Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Tiền chiến</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc Trịnh</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Rock Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Cách mạng</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> ÂU MỸ</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Pop</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Rock</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Electronica/Dance</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> R&B/HipHop/Rap</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Blues/Jazz</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Country</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Latin</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Indie</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Âu Mỹ khác</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> CHÂU Á</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hàn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hoa</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Nhật</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Thái</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> KHÁC</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thiếu nhi</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Không lời</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Beat</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thể loại khác</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tui hát</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        Tuyển tập
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> THỂ LOẠI</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc trẻ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Trữ tình</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Pop</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hàn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hoa</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Soundtrack</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Không lời</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> TÂM TRẠNG</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Buồn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Hưng Phấn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạy Cảm</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhớ Nhung</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thất Tình</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thư Giãn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Vui Vẻ</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> KHUNG CẢNH</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Cafe</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Bar - Club</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Phòng Trà</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tắm - Bơi Lội</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tập Gym</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Lãng Mạn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Mưa</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> CHỦ ĐỀ</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tình Yêu</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Top100</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Weekend</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Chill Out</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Bất Hủ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Song Ca</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Mashup</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        Video
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> VIỆT NAM</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc trẻ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Trữ tình</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Remix Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Rap Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Tiền chiến</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Nhạc Trịnh</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Rock Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link">Cách mạng</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> ÂU MỸ</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Pop</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Rock</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Electronica/Dance</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> R&B/HipHop/Rap</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Blues/Jazz</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Country</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Latin</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Indie</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Âu Mỹ khác</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> CHÂU Á</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hàn</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hoa</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Nhật</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Thái</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> KHÁC</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thiếu nhi</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Không lời</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Beat</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Thể loại khác</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tui hát</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        BXH
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Việt Nam</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Âu Mỹ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Hàn Quốc</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        Chủ Đề 
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> Top Hits 2021</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Summer</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Indie</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Bất Hủ Âu Mỹ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Cover & Mashup</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Lofi</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Thiếu Nhi</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> Chill Out</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> EDM</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hot</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Hoa Lời Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Coffee Time</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Phim</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nhạc Buồn</a></li>
+                                            </ul>
+                                        </div><div class="header__navbar-sublist-column">
+                                            <h4 class="navbar-sublist__title"> Acoustic</h4>
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Hải Ngoại</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Remix Việt</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Bài Hát Yêu Thích</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Gym</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Bolero</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Piano</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#" class="header__navbar-item-link"> 
+                                        Top 100
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Việt Nam</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Âu Mỹ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Châu Á</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Không Lời</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__navbar-item header__navbar-item--more">
+                                    <a href="#" class="header__navbar-item-link">
+                                        <i class="header__navbar-item-menu-icon fas fa-ellipsis-h"></i>
+                                    </a>
+                                    <div class="header__navbar-sublist-wrap"> 
+                                        <div class="header__navbar-sublist-column">
+                                            <ul class="navbar-sublist">
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Khám Phá</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Nghệ Sĩ</a></li>
+                                                <li class="navbar-sublist__item"><a href="#" class="navbar-sublist__item-link"> Tin Tức Âm Nhạc</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- End header navbar -->
+                        <div class="header__upgrade-vip">
+                            <a href="#" class="header__upgrade-vip-link"><span class="header__upgrade-vip-text">NÂNG CẤP VIP</span></a>
+                        </div>
+                        <!--Header controls -->
+                        <div class="header__controls">
+                            <ul class="header__controls-list">
+                                <li class="header__controls-item">
+                                    <a href="#" class="header__controls-item-link">
+                                        <img class="header__controls-item-icon header__controls-item-icon--non-hover" src="https://stc-id.nixcdn.com/v11/images/header_new/ic_search_icon.png" alt="Search">
+                                        <img class="header__controls-item-icon header__controls-item-icon--hover" src="https://stc-id.nixcdn.com/v11/images/header_new/search_hover.png" alt="Search">
+                                    </a>
+                                </li>
+                                <li class="header__controls-item">
+                                    <a href="#" class="header__controls-item-link">
+                                        <img class="header__controls-item-icon header__controls-item-icon--non-hover"src="https://stc-id.nixcdn.com/v11/images/header_new/ic_head.png" alt="Headphone">
+                                    <img class="header__controls-item-icon header__controls-item-icon--hover" src="https://stc-id.nixcdn.com/v11/images/header_new/ic_head_hover.png" alt="Search">
+                                    </a>
+                                </li>
+                                <li class="header__controls-item">
+                                <a href="#" class="header__controls-item-link">
+                                    <img class="header__controls-item-icon header__controls-item-icon--non-hover"src="https://stc-id.nixcdn.com/v11/images/header_new/ic_cloud.png" alt="Cloud">
+                                    <img class="header__controls-item-icon header__controls-item-icon--hover" src="https://stc-id.nixcdn.com/v11/images/header_new/ic_cloud_hover.png" alt="Search">
+                                    </a>
+                                </li>
+                                <li class="header__controls-item">
+                                    <a href="#" class="header__controls-item-link">
+                                        <img class="header__controls-item-img"src="https://stc-id.nixcdn.com/v11/images/header_new/ic_decor_ncoin.png" alt="Headphone vip">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__controls-login">
+                                <a href="#" class="header__controls-login-link">
+                                    <img class="header__controls-login-img" src="https://stc-id.nixcdn.com/v11/images/nologin_user.png" alt="Login image">
+                                    <div class="header__controls-login-body">
+                                        <span class="header__controls-login-text">Đăng nhập</span>  
+                                        <i class="header__controls-login-icon fas fa-sort-down"></i></span>
+                                    </div>
+                                </a>
+                                <ul class="login-list">
+                                    <li class="login-list__item"><a href="#" class="login-list__item-link">Đăng nhập</a></li>
+                                    <li class="login-list__item"><a href="#" class="login-list__item-link"> Đăng kí</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- End header controls -->
+                    </header>
+                    <!-- End header -->
+                </div>
             </div>
         </div>
+        <!-- Border header -->
         <div class="border-header"></div>
+        <!-- End border header -->
     </div>
 </body>
 </html>
