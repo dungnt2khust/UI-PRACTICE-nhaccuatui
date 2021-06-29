@@ -21,6 +21,15 @@
     margin-right: 0;
 }
 
+.row.gutters-s {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.row.gutters-s .col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
 .col {
     padding-left: 4px;
     padding-right: 4px;
