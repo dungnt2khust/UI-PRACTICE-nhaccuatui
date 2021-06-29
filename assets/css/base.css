@@ -18,4 +18,5 @@ html {
     --black-color: #000;
     --text-color-light: rgb(206, 200, 200);
     --primary-color: #2daaed;
+    --height-header: 58px;
 }
