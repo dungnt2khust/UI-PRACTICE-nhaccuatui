@@ -1,4 +1,53 @@
 .main-content {
     background-color: orange;
     height: 1000px;
+    font-size: 3rem;
+}
+/* slider-show */
+.slider-show {
+}
+.slider-show__img {
+    width: 100%;
+}
+.slider-show__img--effect {
+    animation: slideShowSideIn linear 0.3s;
+}
+/* slider-control */
+.slider-control {
+
+}
+.slider-control__img {
+    width: 100%;
+}
+@keyframes slideShowSideIn {
+    from {
+        opacity: 0.5;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+.slider-control--current .slider-control__img{
+    border: 4px solid var(--btn-red-color);
+    width: 100%;
+}
+/* today */
+.today {
+    background-color: blue;
+}
+/* mv hot */
+.mv-hot {
+    background-color: brown;
+}
+/* songs */
+.songs {
+    background-color: chocolate;
+}
+/* karaoke */
+.karaoke {
+    background-color: aqua; 
+}
+/* entertainment */
+.entertainment {
+    background-color: chartreuse;
 }
