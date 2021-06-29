@@ -412,12 +412,14 @@
         <!-- End footer -->
     </div>
     <!-- Modal -->
-    <input type="checkbox" id="login-form" class="input-login-form">
+    <input type="checkbox" hidden id="login-form" class="input-login-form">
+    <input type="checkbox" hidden id="register-form" class="input-register-form">
     <div class="modal">
-        <label for="login-form" class="modal__overlay"></label>
+        <label for="login-form" class="modal__overlay login-state"></label>
+        <label for="register-form" class="modal__overlay register-state"></label>
         <div class="modal__body">
             <!-- Modal login -->
-            <div class="modal__login">
+            <div class="modal__login login-state">
                 <div class="modal__login-head">
                     <h3 class="modal__login-title"> ĐĂNG NHẬP</h3>
                     <label for="login-form" class="modal__login-head-cancel">
@@ -427,7 +429,7 @@
                 <div class="modal__login-body">
                     <div class="modal__login-form">
                         <span class="modal__login-form-guide"> Những thông tin có đánh dấu (<span class="text-red">*</span>) là bắt buộc nhập</span>
-                        <div class="form-field-wrap center-flex">
+                        <div class="form-field-wrap ml-flex">
                             <div class="form-field">
                                 <label for="form-login-name" class="form-label"> 
                                     <span class="form-label__text"> Tên đăng nhập <span class="text-red">*</span> </span>
@@ -440,6 +442,7 @@
                                 </label>
                                 <input type="text" id="form-login-password" class="form-input">
                             </div>
+                            
                             <div class="form-field__checkbox-wrap space-between">
                                 <div class="form-field__checkbox">
                                     <input type="checkbox" id="remember-password" class="form-input__checkbox">
@@ -456,7 +459,7 @@
                         <div class="modal__login-social-or"> ________ HOẶC ________</div>
                         <ul class="social-list">
                             <li class="social-item">
-                                <a href="https://facebook.com" class="social-item__link">
+                                <a href="#" class="social-item__link">
                                     <div class="social-item__icon-wrap background-blue">
                                         <i class="social-item__icon fab fa-facebook-f"></i>
                                     </div>
@@ -464,7 +467,7 @@
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a href="https://google.com" class="social-item__link">
+                                <a href="#" class="social-item__link">
                                     <div class="social-item__icon-wrap background-red">
                                         <i class="social-item__icon fab fa-google-plus-g"></i>
                                     </div>
@@ -477,8 +480,75 @@
             </div>
             <!-- End modal login -->
             <!-- Modal registration -->
-            <div class="modal__registration">
-
+            <div class="modal__registration register-state">
+                <div class="modal__login-head">
+                    <h3 class="modal__login-title"> ĐĂNG KÍ</h3>
+                    <label for="register-form" class="modal__login-head-cancel">
+                        <i class="modal__login-head-cancel-icon fas fa-times"></i>
+                    </label>
+                </div>
+                <div class="modal__login-body">
+                    <div class="modal__login-form">
+                        <span class="modal__login-form-guide"> Những thông tin có đánh dấu (<span class="text-red">*</span>) là bắt buộc nhập</span>
+                        <div class="form-field-wrap ml-flex">
+                            <div class="form-field">
+                                <label for="form-login-name" class="form-label"> 
+                                    <span class="form-label__text"> Tên đăng nhập <span class="text-red">*</span> </span>
+                                </label>
+                                <input type="text" id="form-login-name" class="form-input">
+                            </div>
+                            <div class="form-field">
+                                <label for="form-login-password" class="form-label">
+                                    <span class="form-label__text"> Mật khẩu <span class="text-red">*</span></span>
+                                </label>
+                                <input type="text" id="form-login-password" class="form-input">
+                            </div>
+                            <div class="form-field">
+                                <label for="form-login-password" class="form-label">
+                                    <span class="form-label__text"> Nhập lại mật khẩu <span class="text-red">*</span></span>
+                                </label>
+                                <input type="text" id="form-login-password-retype" class="form-input">
+                            </div>
+                            <div class="form-field">
+                                <label for="form-login-password" class="form-label">
+                                    <span class="form-label__text"> Email <span class="text-red">*</span></span>
+                                </label>
+                                <input type="text" id="form-login-email" class="form-input">
+                            </div>
+                            <div class="form-field__checkbox-wrap space-between">
+                                <div class="form-field__checkbox">
+                                    <input type="checkbox" id="remember-password" class="form-input__checkbox">
+                                    <label for="remember-password" class="form-label__checkbox"> Tôi đã đọc và ghi nhớ các điều kiện <a href="#" class="form-field__forgot-password">thoả thuận sử dụng</a> </label>
+                                </div>
+                                <span class="form-field__forgot-password hide-element"> Quên mật khẩu?</span>
+                            </div>
+                            <div class="modal__login-form-btn btn btn-blue"> ĐĂNG NHẬP</div>
+                        </div>
+                    </div>
+                    <div class="modal__login-social">
+                        <span class="modal__login-social-register-text"> Đã có tài khoản NCT ID?</span>
+                        <div class="modal__login-social-register-btn btn btn-red"> ĐĂNG NHẬP NGAY</div>
+                        <div class="modal__login-social-or"> ________ HOẶC ________</div>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#" class="social-item__link">
+                                    <div class="social-item__icon-wrap background-blue">
+                                        <i class="social-item__icon fab fa-facebook-f"></i>
+                                    </div>
+                                    <span class="social-item__name"> Đăng nhập qua Facebook</span>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-item__link">
+                                    <div class="social-item__icon-wrap background-red">
+                                        <i class="social-item__icon fab fa-google-plus-g"></i>
+                                    </div>
+                                    <span class="social-item__name"> Đăng nhập qua Google +</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- End modal registration -->
         </div>

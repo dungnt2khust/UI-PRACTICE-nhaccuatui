@@ -20,7 +20,7 @@ html {
     --primary-color: #2daaed;
     --height-header: 58px;
     --box-shadow-color: rgba(0, 0, 0, 0.2);
-    --label-form-width: 106px;
+    --label-form-width: 125px;
     --label-form-margin-left: 20px;
     --form-login-width: 800px;
     --form-field-width: 400px;
@@ -34,10 +34,16 @@ html {
     justify-self: center;
     align-self: center;
 }
+.ml-flex {
+    justify-self: flex-start;
+    margin-left: 30px;
+}
 .space-between {
     justify-content: space-between;
 }
-
+.hide-element {
+    display: none;
+}
 
 /* Form */
 .form-field-wrap {
@@ -53,7 +59,7 @@ html {
     align-self: flex-end;
     font-size: 1.4rem;
     display: flex;
-    width: 106px;
+    width: var(--label-form-width);
     flex-direction: row-reverse;
     margin-right: 20px;
     color: var(--text-color);
@@ -81,6 +87,7 @@ html {
     color: var(--primary-color);
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
 }
 .form-field__checkbox-wrap {
     display: flex;
